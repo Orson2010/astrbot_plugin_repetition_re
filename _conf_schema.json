@@ -1,0 +1,128 @@
+{
+    "break_spell_probability": {
+        "description": "打断施法的概率",
+        "type": "float",
+        "hint": "设置打断施法的触发概率，范围0-1，默认0.3",
+        "default": 0.3
+    },
+    "break_spell_text": {
+        "description": "打断施法的文本",
+        "type": "string",
+        "hint": "设置打断施法时发送的文本内容",
+        "default": "打断施法！"
+    },
+    "repeat_threshold": {
+        "description": "触发复读所需的最小连续相同消息数",
+        "type": "int",
+        "hint": "设置触发复读所需的最小连续相同消息数，默认2（即第二条相同消息时复读）",
+        "default": 2
+    },
+    "reverse_probability": {
+        "description": "触发倒读复读的概率",
+        "type": "float",
+        "hint": "设置触发倒读复读的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "reorder_probability": {
+        "description": "触发随机重新排序复读的概率",
+        "type": "float",
+        "hint": "设置触发随机重新排序复读的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "min_chunk_size": {
+        "description": "文本分块的最小字数",
+        "type": "int",
+        "hint": "设置文本分块的最小字数，默认2",
+        "default": 2
+    },
+    "max_chunk_size": {
+        "description": "文本分块的最大字数",
+        "type": "int",
+        "hint": "设置文本分块的最大字数，默认5",
+        "default": 5
+    },
+    "reorder_strength": {
+        "description": "随机重新排序的强度",
+        "type": "float",
+        "hint": "设置随机重新排序的强度，范围0-1，默认0.5。0表示不重新排序，1表示完全随机排序",
+        "default": 0.5
+    },
+    "reorder_per_chunk_times": {
+        "description": "每分块的重新排序次数",
+        "type": "int",
+        "hint": "设置每个文本分块内的重新排序次数，默认1",
+        "default": 1
+    },
+    "image_process_probability": {
+        "description": "处理图片的概率",
+        "type": "float",
+        "hint": "设置处理图片的概率，范围0-1，默认0.3",
+        "default": 0.3
+    },
+    "flip_horizontal_probability": {
+        "description": "水平翻转图片的概率",
+        "type": "float",
+        "hint": "设置水平翻转图片的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "flip_vertical_probability": {
+        "description": "垂直翻转图片的概率",
+        "type": "float",
+        "hint": "设置垂直翻转图片的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "scale_probability": {
+        "description": "缩放图片的概率",
+        "type": "float",
+        "hint": "设置缩放图片的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "min_scale_percent": {
+        "description": "图片缩放的最小百分比",
+        "type": "float",
+        "hint": "设置图片缩放的最小百分比，范围0.1-5.0，默认0.5（50%）",
+        "default": 0.5
+    },
+    "max_scale_percent": {
+        "description": "图片缩放的最大百分比",
+        "type": "float",
+        "hint": "设置图片缩放的最大百分比，范围0.1-5.0，默认1.5（150%）",
+        "default": 1.5
+    },
+    "invert_color_probability": {
+        "description": "反色处理图片的概率",
+        "type": "float",
+        "hint": "设置反色处理图片的概率，范围0-1，默认0.05",
+        "default": 0.05
+    },
+    "gif_frame_change_probability": {
+        "description": "GIF播放速度改变的概率",
+        "type": "float",
+        "hint": "设置GIF播放速度改变的概率，范围0-1，默认0.1",
+        "default": 0.1
+    },
+    "gif_frame_change_min_rate": {
+        "description": "GIF速度改变的最小倍率",
+        "type": "float",
+        "hint": "设置GIF速度改变的最小倍率，例如0.5表示加速到2倍速（播放速度加快），默认0.5",
+        "default": 0.5
+    },
+    "gif_frame_change_max_rate": {
+        "description": "GIF速度改变的最大倍率",
+        "type": "float",
+        "hint": "设置GIF速度改变的最大倍率，例如2.0表示减速到0.5倍速（播放速度减慢），默认2.0",
+        "default": 2.0
+    },
+    "min_scale_threshold": {
+        "description": "缩放的最小变化率",
+        "type": "float",
+        "hint": "设置缩放的最小变化率（相对于原图的变化百分比，负值取绝对值），例如0.2表示缩放比例至少变化20%（如0.8x或1.2x），默认0.1（10%）",
+        "default": 0.1
+    },
+    "preserve_aspect_ratio": {
+        "description": "是否保持宽高比",
+        "type": "bool",
+        "hint": "设置缩放时是否保持宽高比，默认true",
+        "default": true
+    }
+}
